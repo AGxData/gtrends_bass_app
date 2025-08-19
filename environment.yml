@@ -1,0 +1,15 @@
+name: marketing_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - pymc-marketing
+  - jupyterlab
+  - ipykernel
+  - plotly
+  - streamlit
+  - scikit-learn
+  - pip
+  - pip:
+      - pytrends
