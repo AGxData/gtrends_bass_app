@@ -2,7 +2,7 @@ name: gtrends_bass_app
 channels:
   - conda-forge
 dependencies:
-  - python=3.13.5
+  - python=3.11.5
   - pandas=2.3.0
   - numpy=2.2.6
   - plotly=6.3.0
