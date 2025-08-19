@@ -3,13 +3,20 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.13
-  - pymc-marketing
-  - jupyterlab
-  - ipykernel
-  - plotly
-  - streamlit
-  - scikit-learn
+name: gtrends_bass_app
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.5
+  - pandas=2.3.0
+  - numpy=2.2.6
+  - plotly=6.3.0
+  - streamlit=1.25.0
+  - scikit-learn=1.7.0
+  - matplotlib-base=3.10.3
+  - seaborn=0.13.2
+  - pymc=5.23.0
+  - pymc-marketing=0.15.0
   - pip
   - pip:
       - pytrends
