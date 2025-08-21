@@ -18,10 +18,12 @@ import numba
 
 import streamlit as st
 
+az.style.use("arviz-whitegrid")
 
+# Setting up Streamlit app
 st.title("Bayesian Bass Diffusion Model (PyMC-Marketing + Google Trends)")
 
-# user input
+# User input
 keyword = st.text_input("Keyword:", "iphone 16")
 geo = st.text_input("Geo (country code, Ex: US):", "US")
 start_date = st.date_input("Release Date", datetime(2024, 9, 24))
@@ -275,6 +277,7 @@ if st.button("Run Bass Model"):
             
         # Summary
         summary_df = az.summary(idata, var_names = ["m", "p", "q", "peak"])
+        summary_df.index = ["Market Size (m)", "Coefficient of Innovation (p)", "Coefficient of Imitation (q)", "Time of Peak"]
         st.write("Posterior summary:")
         st.dataframe(summary_df.iloc[:, :4])
         
