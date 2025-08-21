@@ -23,5 +23,5 @@ Mamba or Pixi is **highly** recommended for environment resolution!
 
 
 
-# Working on deploying the app via Streamlit Cloud or AWS E3
+## Working on deploying the app via Streamlit Cloud or AWS E3
 Message me for any questions!
